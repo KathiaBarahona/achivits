@@ -1,0 +1,5 @@
+Una gramática es ambigua si existe alguna cadena de terminales que pueda obtenerse mediante árboles de derivación distintos (dos árboles distintos dan la misma cadena)
+
+S - > dS | Sd | d
+
+d -> [a-z]

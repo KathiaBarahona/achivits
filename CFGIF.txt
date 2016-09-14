@@ -1,0 +1,25 @@
+S -> (opened)(condicion)
+
+numero ->[0-9]
+
+and-> &
+
+letra ->[A-Z]|[a-z] |(letra) (numero) | (letra)(letra)
+
+or -> |
+
+operBin -> (igual)(igual) | (oper)(igual) | (and)(and) | (or)(or) | (not)(igual)
+
+opened -> (
+
+igual -> =
+
+closed -> )
+
+oper -> < | >
+
+not -> !
+
+condicion -> (numero)(closed) | (letra)(closed) | (operBin)(condicion) | (igual)(condicion) | (oper)(condicion)
+
+* Tomando en cuenta de que el la palabra if es otro token, no hay un ejemplo mostrando lo contrario

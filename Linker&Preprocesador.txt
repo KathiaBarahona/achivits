@@ -1,0 +1,7 @@
+Un error en el linker seria:
+
+#include
+
+#include El error es que al tener la directiva "#include" seguido de los símbolos de ángulo <>, indica que el linker debe de incluir la librería dentro de los símbolos, "cosa" al no ser una librería de c++, sino una personal o no existente, el linker no podra encontrarla, lo que provocaría un error.
+
+Un error en el preprocesador sería cuando hay un "#include", pero no se puede encontrar el archivo que esta siendo llamado.

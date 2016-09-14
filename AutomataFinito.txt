@@ -1,0 +1,1 @@
+La relación es que se puede utilizar un Automata finito para generar los tokens en la fase de Scanner durante el proceso de compiación, en otras palabras se podria construir un automata que acepte lenguajes definidos por una gramatica dada,
